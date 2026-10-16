@@ -22,6 +22,15 @@ Janeiro/2017 a Dezembro/2018
 | `orders_log_us.csv` | Pedidos realizados (uid, buy_ts, revenue) |
 | `costs_us.csv` | Gastos de marketing por origem e data |
 
+Os CSVs não estão no repositório (o de visitas tem 25 MB). Para rodar o notebook, baixe os três arquivos públicos da TripleTen para a pasta `data/`:
+
+```bash
+mkdir data
+curl -o data/visits_log_us.csv https://code.s3.yandex.net/datasets/visits_log_us.csv
+curl -o data/orders_log_us.csv https://code.s3.yandex.net/datasets/orders_log_us.csv
+curl -o data/costs_us.csv https://code.s3.yandex.net/datasets/costs_us.csv
+```
+
 ## Métricas analisadas
 
 - **Produto:** DAU, WAU, MAU, Sticky Factor, retenção por coorte, ASL
